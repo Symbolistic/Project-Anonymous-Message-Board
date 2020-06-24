@@ -19,14 +19,14 @@ app.use(cors({origin: '*'})); //For FCC testing purposes only
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// // Sets "X-DNS-Prefetch-Control: off".
-// app.use(helmet.dnsPrefetchControl())
+// Sets "X-DNS-Prefetch-Control: off".
+app.use(helmet.dnsPrefetchControl())
 
-// // Sets "X-Frame-Options: SAMEORIGIN".
-// app.use(helmet.frameguard({ action: 'sameorigin' }))
+// Sets "X-Frame-Options: SAMEORIGIN".
+app.use(helmet.frameguard({ action: 'sameorigin' }))
 
-// // Sets "Referrer-Policy: same-origin".
-// app.use(helmet.referrerPolicy({ policy: 'same-origin' }))
+// Sets "Referrer-Policy: same-origin".
+app.use(helmet.referrerPolicy({ policy: 'same-origin' }))
 
 //Sample front-end
 app.route('/b/:board/')

@@ -95,7 +95,7 @@ module.exports = function(app) {
                 return {
                   _id: reply._id,
                   text: reply.text,
-                  created_on: reply.created_on
+                  created_on: reply.created_on,
                 };
               });
 
@@ -105,7 +105,8 @@ module.exports = function(app) {
                 text: thread.text,
                 created_on: thread.created_on,
                 bumped_on: thread.bumped_on,
-                replies: organizedReplies
+                replies: organizedReplies,
+                replycount: thread.replies.length
               };
             } else {
               // If there are no replies, just send back the thread with specific data only
@@ -115,7 +116,8 @@ module.exports = function(app) {
                 text: thread.text,
                 created_on: thread.created_on,
                 bumped_on: thread.bumped_on,
-                replies: thread.replies
+                replies: thread.replies,
+                replycount: thread.replies.length
               };
             }
           });
