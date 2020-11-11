@@ -1,11 +1,7 @@
-**FreeCodeCamp**- Information Security and Quality Assurance
+# Anonymous Message Board
 ------
+This is a full stack message board app, its still been kept relatively simple and is hosted on Glitch.com
 
-Project Anon Message Board
-
-1) SET NODE_ENV to `test` without quotes when ready to write tests and DB to your databases connection string (in .env)
-2) Recomended to create controllers/handlers and handle routing in routes/api.js
-3) You will add any security features to `server.js`
-4) You will create all of the functional/unit tests in `tests/2_functional-tests.js` and `tests/1_unit-tests.js` but only functional will be tested
+[Click here to see the Published Version](https://pool-midi-albertonykus.glitch.me/b/general/)
 
 
